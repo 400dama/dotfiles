@@ -1,0 +1,46 @@
+# macOS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Emacs specific
+damacs/**/*.elc
+damacs/**/*.eld
+damacs/**/*.so
+damacs/**/*.dll
+damacs/.cask
+damacs/*~
+damacs/\#*\#
+damacs/auto-save-list
+damacs/.saves-*
+damacs/.auto-save-list
+damacs/eln-cache/
+damacs/**/*.eln
+damacs/custom.el
+damacs/.custom.el
+damacs/.last-package-update-day
+damacs/.cache/
+damacs/var/
+damacs/.dap-breakpoints
+damacs/.lsp-session-v1
+damacs/.extension/
+damacs/transient/
+damacs/forge-database.sqlite
+damacs/recentf
+damacs/projects
+damacs/projectile-bookmarks.eld
+damacs/tramp
+damacs/elpa/
+damacs/quelpa/
+damacs/history
+damacs/places
+damacs/eshell/
+damacs/.eshell/
+damacs/.*-history
+damacs/bookmarks
+
+# Local env files
+.env
+.env.local
