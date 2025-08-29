@@ -26,3 +26,22 @@
 	path = damacs/extensions/shrink-path
 	url = https://github.com/zbelial/shrink-path.el.git
 	shallow = true
+[submodule "damacs/extensions/emacs-which-key"]
+	path = damacs/extensions/emacs-which-key
+	url = https://github.com/justbur/emacs-which-key.git
+	shallow = true
+[submodule "damacs/extensions/which-key-posframe"]
+	path = damacs/extensions/which-key-posframe
+	url = https://github.com/yanghaoxie/which-key-posframe.git
+	shallow = true
+[submodule "damacs/extensions/posframe"]
+	path = damacs/extensions/posframe
+	url = https://github.com/tumashu/posframe.git
+	shallow = true
+[submodule "damacs/extensions/ace-window"]
+	path = damacs/extensions/ace-window
+	url = https://github.com/abo-abo/ace-window.git
+	shallow = true
+[submodule "damacs/extensions/avy"]
+	path = damacs/extensions/avy
+	url = https://github.com/abo-abo/avy.git
