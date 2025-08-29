@@ -2,3 +2,27 @@
 	path = damacs/extensions/doom-themes
 	url = https://github.com/doomemacs/themes.git
 	shallow = true
+[submodule "damacs/extensions/doom-modeline"]
+	path = damacs/extensions/doom-modeline
+	url = https://github.com/seagle0128/doom-modeline.git
+	shallow = true
+[submodule "damacs/extensions/nerd-icons"]
+	path = damacs/extensions/nerd-icons
+	url = https://github.com/rainstormstudio/nerd-icons.el.git
+	shallow = true
+[submodule "damacs/extensions/dash"]
+	path = damacs/extensions/dash
+	url = https://github.com/magnars/dash.el.git
+	shallow = true
+[submodule "damacs/extensions/s"]
+	path = damacs/extensions/s
+	url = https://github.com/magnars/s.el.git
+	shallow = true
+[submodule "damacs/extensions/f"]
+	path = damacs/extensions/f
+	url = https://github.com/rejeep/f.el.git
+	shallow = true
+[submodule "damacs/extensions/shrink-path"]
+	path = damacs/extensions/shrink-path
+	url = https://github.com/zbelial/shrink-path.el.git
+	shallow = true
