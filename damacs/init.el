@@ -1,4 +1,4 @@
-;;; early-init.el --- Early initialization. -*- lexical-binding: t -*-
+;;; init.el --- Initialization. -*- lexical-binding: t -*-
 
 (require 'init-basic)
 

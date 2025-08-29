@@ -52,3 +52,5 @@
 
 ;; 添加 config 目录到 load-path
 (add-to-list 'load-path (expand-file-name "config" user-emacs-directory))
+
+(provide 'early-init)
