@@ -1,0 +1,4 @@
+[submodule "damacs/extensions/doom-themes"]
+	path = damacs/extensions/doom-themes
+	url = https://github.com/doomemacs/themes.git
+	shallow = true
