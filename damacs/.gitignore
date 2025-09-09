@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Emacs cache
+auto-save-list/
+eln-cache/
+eshell/history
+eshell/lastdir
+
+# EAF runtime data
+eaf/browser/cookies/
+eaf/browser/*.db
+eaf/session.json
+
+# Byte-compiled
+*.elc
+
+# Python cache
+__pycache__/

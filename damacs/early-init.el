@@ -3,8 +3,13 @@
 ;; 禁用软件包管理器初始化
 (setq package-enable-at-startup nil)
 
-;; 提高 GC 阈值，加快启动速度
-(setq gc-cons-threshold most-positive-fixnum)
+;; 提高 GC 阈值，加快启动速度，并禁用文件名处理器以加快加载
+(defvar damacs--gc-cons-threshold gc-cons-threshold)
+(defvar damacs--gc-cons-percentage gc-cons-percentage)
+(defvar damacs--file-name-handler-alist file-name-handler-alist)
+(setq gc-cons-threshold most-positive-fixnum
+      gc-cons-percentage 0.6
+      file-name-handler-alist nil)
 
 ;; 禁用菜单栏、工具栏和滚动条
 (push '(menu-bar-lines . 0) default-frame-alist)
@@ -23,10 +28,12 @@
 ;; 禁止自动调整frame大小
 (setq frame-inhibit-implied-resize t)
 
-;; 初始化完成后恢复GC阈值
+;; 初始化完成后恢复 GC 与文件名处理器
 (add-hook 'after-init-hook
-          #'(lambda ()
-              (setq gc-cons-threshold (* 1024 1024 20))))
+          (lambda ()
+            (setq gc-cons-threshold (or damacs--gc-cons-threshold (* 64 1024 1024))
+                  gc-cons-percentage (or damacs--gc-cons-percentage 0.1)
+                  file-name-handler-alist damacs--file-name-handler-alist)))
 
 ;; 禁用 site-run-file
 (setq site-run-file nil)

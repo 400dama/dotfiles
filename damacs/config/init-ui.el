@@ -27,14 +27,15 @@
 	display-time-default-load-average nil
 	display-time-interval 60)
   (display-time-mode 1)
-  (when (and (fboundp 'display-batter-mode)
-	     (not (string-match-p "^Power N/A" (battery))))
+  (when (and (fboundp 'display-battery-mode)
+             (not (string-match-p "^Power N/A" (battery))))
     (display-battery-mode 1))
   (add-hook 'after-init-hook #'doom-modeline-mode))
 (setq inhibit-compacting-font-caches t)
 
 ;; 平滑滚动（Emacs 29+）
-(pixel-scroll-precision-mode 1)
+(when (fboundp 'pixel-scroll-precision-mode)
+  (pixel-scroll-precision-mode 1))
 (setq scroll-margin 1
       scroll-conservatively 101
       mouse-wheel-scroll-amount '(2 ((shift) . 1) ((control) . nil))

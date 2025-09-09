@@ -45,3 +45,12 @@
 [submodule "damacs/extensions/avy"]
 	path = damacs/extensions/avy
 	url = https://github.com/abo-abo/avy.git
+[submodule "damacs/extensions/emacs-application-framework"]
+	path = damacs/extensions/emacs-application-framework
+	url = https://github.com/emacs-eaf/emacs-application-framework.git
+	shallow = true
+	branch = master
+[submodule "damacs/extensions/exec-path-from-shell"]
+	path = damacs/extensions/exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell.git
+	shallow = true

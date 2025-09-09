@@ -1,4 +1,4 @@
-;;; early-init.el --- Early initialization. -*- lexical-binding: t -*-
+;;; init-basic.el --- Basic initialization. -*- lexical-binding: t -*-
 (require 'cl-lib)
 (defun add-subdirs-to-load-path (search-dir)
   (interactive)
@@ -31,5 +31,16 @@
         (add-subdirs-to-load-path subdir-path)))))
 ;; 使用 user-emacs-directory 获取 .emacs.d 的路径
 (add-subdirs-to-load-path user-emacs-directory)
+(when (require 'exec-path-from-shell nil t)
+  (when (memq window-system '(mac ns x))
+    ;; Prefer user's login shell; fall back to fish if found
+    (when-let ((fish (executable-find "fish")))
+      (setq exec-path-from-shell-shell-name fish))
+    ;; Ensure we get a login shell env
+    (setq exec-path-from-shell-arguments '("-l"))
+    ;; Common env vars to import
+    (dolist (var '("PATH" "MANPATH" "SSH_AUTH_SOCK" "GPG_AGENT_INFO" "LANG" "LC_ALL"))
+      (add-to-list 'exec-path-from-shell-variables var))
+    (exec-path-from-shell-initialize)))
 
 (provide 'init-basic)

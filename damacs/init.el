@@ -4,5 +4,6 @@
 (require 'init-ui)
 (require 'init-whichkey)
 (require 'init-ace-window)
+(require 'init-eaf)
 
 (provide 'init)
