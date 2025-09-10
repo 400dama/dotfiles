@@ -3,6 +3,7 @@
 (require 'init-basic)
 (require 'init-ui)
 (require 'init-vertico)
+(require 'init-orderless)
 (require 'init-whichkey)
 (require 'init-ace-window)
 (require 'init-eaf)

@@ -58,3 +58,7 @@
 	path = damacs/extensions/vertico
 	url = https://github.com/minad/vertico.git
 	shallow = true
+[submodule "damacs/extensions/orderless"]
+	path = damacs/extensions/orderless
+	url = https://github.com/oantolin/orderless.git
+	shallow = true
