@@ -9,7 +9,8 @@
   ;; - C-.: do-what-I-mean default action
   (global-set-key (kbd "C-;") #'embark-act)
   (global-set-key (kbd "C-.") #'embark-dwim)
-
+  (global-set-key (kbd "C-h B") #'embark-bindings)
+  
   ;; Minibuffer helpers
   (define-key minibuffer-local-map (kbd "C-c C-o") #'embark-export)
   (define-key minibuffer-local-map (kbd "C-c C-c") #'embark-collect)
