@@ -54,3 +54,7 @@
 	path = damacs/extensions/exec-path-from-shell
 	url = https://github.com/purcell/exec-path-from-shell.git
 	shallow = true
+[submodule "damacs/extensions/vertico"]
+	path = damacs/extensions/vertico
+	url = https://github.com/minad/vertico.git
+	shallow = true
