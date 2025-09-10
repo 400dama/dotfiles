@@ -62,3 +62,7 @@
 	path = damacs/extensions/orderless
 	url = https://github.com/oantolin/orderless.git
 	shallow = true
+[submodule "damacs/extensions/marginalia"]
+	path = damacs/extensions/marginalia
+	url = https://github.com/minad/marginalia.git
+	shallow = true
