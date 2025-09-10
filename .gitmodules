@@ -66,3 +66,7 @@
 	path = damacs/extensions/marginalia
 	url = https://github.com/minad/marginalia.git
 	shallow = true
+[submodule "damacs/extensions/embark"]
+	path = damacs/extensions/embark
+	url = https://github.com/oantolin/embark.git
+	shallow = true
