@@ -13,4 +13,10 @@
   ;; Cycle annotators quickly from the minibuffer
   (define-key minibuffer-local-map (kbd "M-A") #'marginalia-cycle))
 
+;; Icons in completion using nerd-icons-completion (plays well with Marginalia)
+(when (require 'nerd-icons-completion nil t)
+  (nerd-icons-completion-mode 1)
+  (with-eval-after-load 'marginalia
+    (add-hook 'marginalia-mode-hook #'nerd-icons-completion-marginalia-setup)))
+
 (provide 'init-marginalia)

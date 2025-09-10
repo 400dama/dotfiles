@@ -17,7 +17,13 @@
     (with-eval-after-load 'vertico
       (define-key vertico-map (kbd "RET") #'vertico-directory-enter)
       (define-key vertico-map (kbd "DEL") #'vertico-directory-delete-char)
-      (define-key vertico-map (kbd "M-DEL") #'vertico-directory-delete-word))))
+      (define-key vertico-map (kbd "M-DEL") #'vertico-directory-delete-word)))
+
+  ;; Quick selection using Avy-style labels (built-in extension)
+  (when (require 'vertico-quick nil t)
+    ;; Exit with selection
+    (define-key vertico-map (kbd "C-'") #'vertico-quick-exit)
+    ;; Insert candidate, keep session
+    (define-key vertico-map (kbd "C-;") #'vertico-quick-insert)))
 
 (provide 'init-vertico)
-

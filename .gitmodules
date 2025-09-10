@@ -70,3 +70,23 @@
 	path = damacs/extensions/embark
 	url = https://github.com/oantolin/embark.git
 	shallow = true
+[submodule "damacs/extensions/consult"]
+	path = damacs/extensions/consult
+	url = https://github.com/minad/consult.git
+	shallow = true
+[submodule "damacs/extensions/consult-dir"]
+	path = damacs/extensions/consult-dir
+	url = https://github.com/karthink/consult-dir.git
+	shallow = true
+[submodule "damacs/extensions/nerd-icons-completion"]
+	path = damacs/extensions/nerd-icons-completion
+	url = https://github.com/rainstormstudio/nerd-icons-completion.git
+	shallow = true
+[submodule "damacs/extensions/embark-consult"]
+	path = damacs/extensions/embark-consult
+	url = https://github.com/emacs-straight/embark-consult.git
+	shallow = true
+[submodule "damacs/extensions/wgrep"]
+	path = damacs/extensions/wgrep
+	url = https://github.com/mhayashi1120/Emacs-wgrep.git
+	shallow = true
