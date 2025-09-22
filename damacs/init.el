@@ -9,6 +9,7 @@
 (require 'init-consult)
 (require 'init-whichkey)
 (require 'init-ace-window)
-(require 'init-eaf)
+;; (require 'init-eaf)
+(require 'init-code)
 
 (provide 'init)

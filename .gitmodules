@@ -90,3 +90,15 @@
 	path = damacs/extensions/wgrep
 	url = https://github.com/mhayashi1120/Emacs-wgrep.git
 	shallow = true
+[submodule "damacs/extensions/lsp-bridge"]
+	path = damacs/extensions/lsp-bridge
+	url = https://github.com/manateelazycat/lsp-bridge.git
+	shallow = true
+[submodule "damacs/extensions/markdown-mode"]
+	path = damacs/extensions/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode.git
+	shallow = true
+[submodule "damacs/extensions/yasnippet"]
+	path = damacs/extensions/yasnippet
+	url = https://github.com/joaotavora/yasnippet.git
+	shallow = true

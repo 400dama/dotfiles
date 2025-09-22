@@ -41,7 +41,9 @@ damacs/.eshell/
 damacs/.*-history
 damacs/bookmarks
 damacs/eaf
+damacs/tree-sitter
 
 # Local env files
 .env
-.env.local
+.env.localpackage-lock.json
+package-lock.json
